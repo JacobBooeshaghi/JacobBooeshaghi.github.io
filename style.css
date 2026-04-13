@@ -330,6 +330,10 @@ h2 {
     object-position: 50% 46%;
 }
 
+.project-image-crosssection-1 {
+    object-position: 50% 60%;
+}
+
 .project-figure figcaption {
     padding: 0.6rem 0.7rem 0.8rem;
     color: var(--muted);
