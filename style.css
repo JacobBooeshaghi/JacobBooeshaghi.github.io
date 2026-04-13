@@ -273,6 +273,16 @@ h2 {
     box-shadow: 0 20px 38px rgba(15, 95, 93, 0.2);
 }
 
+.about-headshot {
+    width: clamp(110px, 16vw, 170px);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 0.8rem;
+    border: 2px solid rgba(22, 120, 114, 0.22);
+}
+
 .page-head {
     padding: 2.8rem 0 1.1rem;
 }
@@ -291,6 +301,34 @@ h2 {
 .section-stack ul {
     padding-left: 1.2rem;
     margin: 0;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
+}
+
+.project-figure {
+    margin: 0;
+    border: 1px solid rgba(212, 204, 191, 0.95);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.project-figure figcaption {
+    padding: 0.6rem 0.7rem 0.8rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.45;
 }
 
 .site-footer {
@@ -387,6 +425,10 @@ h2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .project-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .dropdown-menu {
         position: static;
         opacity: 1;
@@ -440,6 +482,10 @@ h2 {
     }
 
     .grid-three {
+        grid-template-columns: 1fr;
+    }
+
+    .project-gallery {
         grid-template-columns: 1fr;
     }
 
