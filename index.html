@@ -12,9 +12,9 @@
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
-            <a class="brand" href="index.html">Jacob Booeshaghi</a>
+            <a class="brand" href="index.html"><img class="brand-avatar" src="images/professional%20headshot.png" alt="Jacob Booeshaghi headshot"><span>Jacob Booeshaghi</span></a>
             <nav class="top-nav" aria-label="Main Navigation">
-                <ul>
+                <ul><li><a href="about.html">About Me</a></li>
                     <li class="dropdown">
                         <a href="#">Research</a>
                         <ul class="dropdown-menu">
@@ -46,7 +46,7 @@
                             <li><a href="hobbies-placeholder-2.html">Placeholder Project 2</a></li>
                         </ul>
                     </li>
-                    <li><a href="about.html">About Me</a></li>
+                    
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -57,42 +57,52 @@
     <main>
         <section class="hero container">
             <p class="eyebrow">Engineering Portfolio</p>
-            <div class="hero-actions">
-                <a class="button button-ghost" href="resume.html">View Resume</a>
-                <a class="button button-ghost" href="contact.html">Get In Touch</a>
-            </div>
         </section>
 
         <section class="container grid-two intro-grid">
-            <article class="card reveal">
-                <h2>Featured Work</h2>
+            <a class="card card-link reveal" href="about.html">
+                <h2>About Me</h2>
                 <p>
-                    Explore selected work across biomedical engineering, research, and fabrication.
+                    Biomedical engineering student at the University of Florida focused on research, prototyping, and hands-on fabrication.
                 </p>
-            </article>
-            <article class="card reveal delay-1">
+            </a>
+            <a class="card card-link reveal delay-1" href="research-perfusable-tissue-constructs.html">
                 <h2>Current Focus</h2>
                 <p>
                     Perfusable tissue constructs, microfluidic lab-on-a-chip systems, assistive exoskeleton control, and advanced blacksmithing projects.
                 </p>
-            </article>
+            </a>
         </section>
 
         <section class="container templates">
             <h2>Portfolio Overview</h2>
             <div class="grid-three">
-                <article class="card reveal">
+                <a class="card card-link reveal" href="biomed-biodesign-exoskeleton.html">
                     <h3>Biomedical Feature</h3>
                     <p>Biodesign Exoskeleton and Pneumonia Detection Vision Transformer case studies.</p>
-                </article>
-                <article class="card reveal delay-1">
+                </a>
+                <a class="card card-link reveal delay-1" href="research-perfusable-tissue-constructs.html">
                     <h3>Research Highlight</h3>
                     <p>Perfusable Tissue Constructs, Lab Grown Meat, and Type 1 Diabetes Lab on a Chip.</p>
-                </article>
-                <article class="card reveal delay-2">
+                </a>
+                <a class="card card-link reveal delay-2" href="blacksmithing-background.html">
                     <h3>Blacksmithing Highlight</h3>
                     <p>Background, FIERF 2025 Hammer, TMS Bladesmithing 2026, and FIERF 2026 Felling Axe.</p>
-                </article>
+                </a>
+            </div>
+        </section>
+
+        <section class="container templates">
+            <h2>Next Steps</h2>
+            <div class="grid-two">
+                <a class="card card-link reveal" href="resume.html">
+                    <h3>Resume</h3>
+                    <p>View experience, technical skills, and leadership details.</p>
+                </a>
+                <a class="card card-link reveal delay-1" href="contact.html">
+                    <h3>Get In Contact</h3>
+                    <p>Reach out for collaboration, research opportunities, or project work.</p>
+                </a>
             </div>
         </section>
     </main>
